@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36373C"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_signin"
+            android:layout_marginBottom="150dp"
+            android:text="Errors from logs will be copied here, Also please follow steps below"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Error_text"
+            />
+
+        <Button
+            android:id="@+id/button_permission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/signin_butt"
+            android:text="1. Give permissino to draw over apps"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/button_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_subscribe"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/signin_butt"
+            android:text="2. Signin with google"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/button_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/signin_butt"
+            android:text="3. Create/Refresh token"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteY="1dp"
+            android:textSize="15sp"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/button_subscribe"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/otp_relative"
+
+        >
+
+            <!-- Otp_background_popup -->
+            <RelativeLayout
+            android:id="@+id/otp_backgro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/otp_backgro" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/otp_foregro"
+            android:layout_marginBottom="30dp"
+            android:text="4. Now Download our chrome extention, Then create token and enter below OTP in the chrome extention"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp" />
+
+            <!-- Otp_foreground -->
+            <RelativeLayout
+                android:id="@+id/otp_foregro"
+                android:layout_width="235dp"
+                android:layout_height="48dp"
+                android:background="@drawable/otp_foregro"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                >
+
+                <TextView
+                    android:id="@+id/otptext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="NULL"
+                    android:textColor="#000000"
+                    android:textSize="24sp"/>
+            </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

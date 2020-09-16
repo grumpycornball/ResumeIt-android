@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Sync</string>
+    <string name="shared_pref_name">Sync_shared_pref</string>
+
+</resources>

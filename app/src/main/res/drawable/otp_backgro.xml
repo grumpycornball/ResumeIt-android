@@ -1,0 +1,24 @@
+<!-- drawable/otp_backgro.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="411dp"
+    android:height="241dp"
+    android:viewportWidth="411"
+    android:viewportHeight="241"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M39 0H372C393.539 0 411 17.4609 411 39V202C411 223.539 393.539 241 372 241H39C17.4609 241 0 223.539 0 202V39C0 17.4609 17.4609 0 39 0Z"
+            />
+
+        <path
+            android:pathData="M0 0V241H411V0"
+            android:fillColor="#27A8A8"
+            />
+
+    </group>
+
+</vector>

@@ -1,0 +1,22 @@
+<!-- drawable/signin_butt.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="340dp"
+    android:height="65dp"
+    android:viewportWidth="340"
+    android:viewportHeight="65"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M32.5 0H307.5C325.449 0 340 14.5507 340 32.5C340 50.4493 325.449 65 307.5 65H32.5C14.5507 65 0 50.4493 0 32.5C0 14.5507 14.5507 0 32.5 0Z"
+            />
+
+        <path
+            android:pathData="M0 0V65H340V0"
+            android:fillColor="#27A8A8"
+            />
+    </group>
+</vector>
